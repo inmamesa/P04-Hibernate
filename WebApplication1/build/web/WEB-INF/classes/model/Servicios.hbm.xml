@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-jun-2021 14:09:10 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Servicios" table="SERVICIOS" schema="VETE" optimistic-lock="version">
+        <id name="numeroservicio" type="int">
+            <column name="NUMEROSERVICIO" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="NOMBRE" length="25" />
+        </property>
+        <property name="precio" type="java.lang.Integer">
+            <column name="PRECIO" />
+        </property>
+        <property name="idt" type="java.lang.Integer">
+            <column name="IDT" />
+        </property>
+        <property name="imagen" type="string">
+            <column name="IMAGEN" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
